@@ -5,6 +5,6 @@ EJERCICIO 1: Implemente en lenguaje Python una función que aproxime mediante un
 EJERCICIO 2: Implemente en lenguaje Python el método de Newton-Raphson para aproximar la solución de f(x) = 0, siendo f(x) = exp(-x)-ln(x).
 
 Escriba aqui los nombres de los integrantes del grupo:
-- Pedro Pérez.
-- José López.
+- Lusandre Marcano.
+- José Gómez.
 """
