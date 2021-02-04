@@ -9,7 +9,7 @@ Escriba aqui los nombres de los integrantes del grupo:
 - José Gómez. CI:274571011
 """
 '''
-    Polinomio de Taylor
+    Ejercicio 1: Polinomio de Taylor
 '''
 
 # Librerias
@@ -59,3 +59,37 @@ print(' Solucion real:', fxi)
 print(' Error real:', Ereal)
 print(' Error relativo:', Erela)
 input()
+
+
+
+'''
+    Ejercicio 2: Metodo de Newton-Raphson
+'''
+
+from math import *
+ 
+def newton(f,df,xi,Es):    
+    """
+    #Aplica el Metodo de Newton Raphson a los valores ingresados por parametros:
+        f  = funcion 
+        df = derivada de la funcion
+        xi = valor de inicio
+        Es = error inicial
+    """
+    x  = xi 
+    Ea = 100    #Error Aproximado
+    n  = 1      #Numero de Iteracion
+    xa = 0
+    print("Aproximacion Inicial:",x)
+    while Ea > Es:
+        xa = x
+        x  = x-f(x)/df(x)      #Formula iterativa de Newton-Raphson para calcular la siguiente aproximacion
+        Ea = abs((x-xa)/x*100) #calculo del error aproximado
+        n += 1
+        print("[Aprox. a la raiz:",x,"]","[Error aprox.: {:.2f},%]".format(Ea))
+    print(x,"-->Es una buena aproximacion para la solucion de f(x)=0")
+    print("Numero de iteraciones realizadas: ",n)
+
+f  = lambda x : e**-x-log(x)     #Funcion
+df = lambda x : -(1/exp(x))-1/x  #Derivada de la funcion
+newton(f,df,1,1)
