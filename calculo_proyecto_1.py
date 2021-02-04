@@ -51,6 +51,7 @@ Ereal = fxi - pxi             # Error real
 Erela = Erelativo(fx,x0,n,xi) # Error relativo
 
 # Impresiones en pantalla
+print('Polinomio de Taylor')
 print(' Funcion original:',fx)
 print(' Polinomio de Taylor:', Poli) 
 print(' Valor de evaluacion:', xi) 
@@ -92,4 +93,5 @@ def newton(f,df,xi,Es):
 
 f  = lambda x : e**-x-log(x)     #Funcion
 df = lambda x : -(1/exp(x))-1/x  #Derivada de la funcion
+print('Metodo de Newton Raphson')
 newton(f,df,1,1)
