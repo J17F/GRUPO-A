@@ -92,5 +92,5 @@ def newton(f,df,xi,Es):
 
 f  = lambda x : e**-x-log(x)     #Funcion
 df = lambda x : -(1/exp(x))-1/x  #Derivada de la funcion
-print('Metodo de Newton Raphson')
+print('\nMetodo de Newton Raphson')
 newton(f,df,1,1)
