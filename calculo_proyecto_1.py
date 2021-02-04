@@ -13,8 +13,8 @@ Escriba aqui los nombres de los integrantes del grupo:
 '''
 
 # Librerias
-from math import * # Para funciones matematicas
 from sympy import * # Para funciones en forma simbólica
+from math import * # Para funciones matematicas
 
 # Funciones 
 def Ptaylor(fx,x0,n): #Funcion que calcula el polinomio de Taylor
@@ -67,7 +67,6 @@ print(' Error relativo:', Erela)
     Ejercicio 2: Metodo de Newton-Raphson
 '''
 
-from math import *
  
 def newton(f,df,xi,Es):    
     """
