@@ -6,7 +6,7 @@ EJERCICIO 2: Implemente en lenguaje Python el método de Newton-Raphson para apr
 
 Escriba aqui los nombres de los integrantes del grupo:
 - Lusandre Marcano. CI:28349644
-- José Gómez. CI:274571011
+- José Gómez. CI:27547101
 """
 '''
     Ejercicio 1: Polinomio de Taylor
@@ -59,7 +59,7 @@ print(' Solucion aproximada:', pxi)
 print(' Solucion real:', fxi) 
 print(' Error real:', Ereal)
 print(' Error relativo:', Erela)
-input()
+
 
 
 
